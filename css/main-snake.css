@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'untitled-font-1';
+    src: url('untitled-font-1.woff');
+    src: url('untitled-font-1.eot'); /* IE9 Compat Modes */
+    src: url('untitled-font-1.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('untitled-font-1.woff2') format('woff2'), /* Super Modern Browsers */
+         url('untitled-font-1.woff') format('woff'), /* Pretty Modern Browsers */
+         url('untitled-font-1.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('untitled-font-1.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+body{
+	text-align: center;
+	margin-top: 10px;
+	font-family: 'untitled-font-1';
+}
+
+
+
+canvas {
+    display: block;
+    margin: auto;
+    border: 5px solid black;
+    background: url("http://i.imgur.com/9OljUGx.jpg");
+	background-size:cover;
+}
+
+#tetrisCanvas{
+    display:none;
+}
+
+#canvas{
+    display:none;
+}
+
+.in{
+	display:inline-block;
+}
+
+.scorePad{
+	padding-left: 50px;
+}
+
+.scorePad{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+ul {
+	margin-top:260px;
+	margin-right: 70px;
+    list-style: none
+}
+
+
+.HTI{
+	width: 200px;
+}
+
+.buttons{
+	margin:0 auto;
+}
+
+#hiButton{
+	margin-top:100px;
+	cursor: pointer;
+}
+
+.hiIMG{
+	margin-top:100px;
+}
+
+#HT{
+	background: url("http://i.imgur.com/Wr2wUG9.png");
+	background-size: cover;
+}
+#hiScore{
+	background: url("http://i.imgur.com/3zGB0b8.png");
+	background-size: cover;
+	cursor: pointer;
+}
+
+#land, #reset, #hiScore, #HT{
+	margin:0 auto;
+	width: 500px;
+	height:600px;
+	border: 5px solid black;
+}
+
+.intro{
+	margin-top: 30px;
+}
+
+a{
+	cursor: pointer;
+}
+
+#reset{
+	display: none;
+}
+
+#hiScore{
+	display: none;
+}
+
+
+#HT{
+	display: none;
+	cursor: pointer;
+}
