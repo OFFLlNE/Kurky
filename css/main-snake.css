@@ -3,10 +3,7 @@
     src: url('untitled-font-1.woff');
     src: url('untitled-font-1.eot'); /* IE9 Compat Modes */
     src: url('untitled-font-1.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('untitled-font-1.woff2') format('woff2'), /* Super Modern Browsers */
-         url('untitled-font-1.woff') format('woff'), /* Pretty Modern Browsers */
-         url('untitled-font-1.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('untitled-font-1.svg#svgFontName') format('svg'); /* Legacy iOS */
+    
 }
 
 
