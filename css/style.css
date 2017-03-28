@@ -45,8 +45,7 @@ canvas {
 }
 
 ul {
-	margin-top:260px;
-	margin-right: 70px;
+	margin-top: -10px;
     list-style: none
 }
 
@@ -68,17 +67,7 @@ ul {
 	margin-top:100px;
 }
 
-#HT{
-	background: url("http://i.imgur.com/Wr2wUG9.png");
-	background-size: cover;
-}
-#hiScore{
-	background: url("http://i.imgur.com/3zGB0b8.png");
-	background-size: cover;
-	cursor: pointer;
-}
-
-#land, #reset, #hiScore, #HT{
+#land, #reset, #HT{
 	margin:0 auto;
 	width: 500px;
 	height:600px;
@@ -97,12 +86,10 @@ a{
 	display: none;
 }
 
-#hiScore{
-	display: none;
-}
-
 
 #HT{
+	background: url("http://i.imgur.com/Wr2wUG9.png");
+	background-size: cover;
 	display: none;
 	cursor: pointer;
 }
