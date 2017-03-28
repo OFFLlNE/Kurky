@@ -52,7 +52,7 @@ $(document).ready(function(){
         //Lets create the snake now
         var snake_array; //an array of cells to make up the snake
         var timeOut = 3000;
-        var regularSpeed = 100;
+        var regularSpeed = 150;
         var snakeBool = true;
         var tetrisBool = false;
 
