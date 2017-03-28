@@ -251,10 +251,10 @@ $(document).ready(function(){
             if(snakeBool){
                 var key = e.which;
             //We will add another clause to prevent reverse gear
-            if(key == "37" && d != "right") d = "left";
-            else if(key == "38" && d != "down") d = "up";
-            else if(key == "39" && d != "left") d = "right";
-            else if(key == "40" && d != "up") d = "down"; //DROP down    
+            if(key == "37" && d != "right") d = "left" //move snake one cell;
+            else if(key == "38" && d != "down") d = "up" //move snake one cell;
+            else if(key == "39" && d != "left") d = "right" //move snake one cell;
+            else if(key == "40" && d != "up") d = "down" //move snake one cell; //DROP down        
             }
             //The snake is now keyboard controllable
         }) 
