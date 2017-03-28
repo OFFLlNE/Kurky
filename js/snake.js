@@ -5,11 +5,6 @@ $(document).ready(function(){
         $('#hiScore').css("display","block");
     });
 
-    $('#hiScore').click(function() {
-        $('#reset').css("display","block");
-        $('#hiScore').css("display","none");
-    });
-
     $('.HowTo').click(function() {
         $('#land').css("display","none");
         $('#HT').css("display","block");
