@@ -1,10 +1,4 @@
 $(document).ready(function(){
-
-    $('#hiButton').click(function() {
-        $('#reset').css("display","none");
-        $('#hiScore').css("display","block");
-    });
-
     $('.HowTo').click(function() {
         $('#land').css("display","none");
         $('#HT').css("display","block");
