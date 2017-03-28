@@ -20,7 +20,8 @@ $(document).ready(function(){
         $('#land').css("display","block");
     });
 
-    $('.gameButton').click(function() {
+    //$('.gameButton').click(function() {
+    var theGame = function(){        
         $(".scorePad").empty();
         $('#land').css("display","none");
         $('#reset').css("display","none");
@@ -95,6 +96,11 @@ $(document).ready(function(){
             $('#canvas').css("display","none");
             $('#tetrisCanvas').css("display","none");
             $('#reset').css("display","block");
+            document.body.onkeydown = function( e ) {
+                if(e.keyCode == 32 || e.keyCode == 13){
+                    theGame();
+                }
+            }
             //console.log(valueList)
 
 
@@ -104,8 +110,7 @@ $(document).ready(function(){
             //ctx.fillText("DAMN", 30, 30);
         }
 
-        function init()
-        {
+        function init(){
             d = "right"; //default direction
             create_snake();
             create_food(); //Now we can see the food particle
@@ -548,7 +553,9 @@ $(document).ready(function(){
 
 
      
-    });
+    };
+
+    $('.gameButton').click(theGame);    
 
 
 });
