@@ -45,7 +45,6 @@ canvas {
 }
 
 ul {
-	margin-top: -10px;
     list-style: none
 }
 
@@ -59,12 +58,11 @@ ul {
 }
 
 #hiButton{
-	margin-top:100px;
-	cursor: pointer;
+	margin-top:75px;
 }
 
 .hiIMG{
-	margin-top:100px;
+	margin-top:75px;
 }
 
 #land, #reset, #HT{
