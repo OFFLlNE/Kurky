@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    var regularSpeed = 150;
+    var tetrisSpeed = 250;
+
     $('.HowTo').click(function() {
         $('#land').css("display","none");
         $('#HT').css("display","block");
@@ -52,9 +55,10 @@ $(document).ready(function(){
         //Lets create the snake now
         var snake_array; //an array of cells to make up the snake
         var timeOut = 3000;
-        var regularSpeed = 150;
+        
         var snakeBool = true;
         var tetrisBool = false;
+        var isButtonpressed = false;
 
         function endGame(score){
             console.log("Game over")
@@ -142,6 +146,7 @@ $(document).ready(function(){
         //Lets paint the snake now
         function paint(){
             if(snakeBool){
+                isButtonpressed = false;
             ctx.fillStyle = "white";
             ctx.fillRect(0, 0, w, h);
             ctx.strokeStyle = "black";
@@ -248,13 +253,20 @@ $(document).ready(function(){
         
         //Lets add the keyboard controls now
         $(document).keydown(function(e){
-            if(snakeBool){
+            if(snakeBool && !isButtonpressed){
                 var key = e.which;
-            //We will add another clause to prevent reverse gear
-            if(key == "37" && d != "right") d = "left" //move snake one cell;
-            else if(key == "38" && d != "down") d = "up" //move snake one cell;
-            else if(key == "39" && d != "left") d = "right" //move snake one cell;
-            else if(key == "40" && d != "up") d = "down" //move snake one cell; //DROP down        
+                if(key == "37" && d != "right"){
+                    d = "left"; isButtonpressed = true;
+                }
+                else if(key == "38" && d != "down"){
+                    d = "up"; isButtonpressed = true;
+                }
+                else if(key == "39" && d != "left"){
+                    d = "right"; isButtonpressed = true;
+                }
+                else if(key == "40" && d != "up"){
+                    d = "down"; isButtonpressed = true;
+                }       
             }
             //The snake is now keyboard controllable
         }) 
@@ -472,7 +484,7 @@ $(document).ready(function(){
             init2();
             newShape();
             lose = false;
-            interval = setInterval( tick, 250 );
+            interval = setInterval( tick, tetrisSpeed );
         }
 
 
